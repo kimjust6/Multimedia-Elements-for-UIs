@@ -17,6 +17,7 @@ import Lab4 from "./components/Labs/Lab4";
 import Lab5 from "./components/Labs/Lab5";
 import PageNotFound from "./components/PageNotFound";
 import LabsNav from "./components/Labs/LabsNav";
+import Navigation from "./components/Navbar";
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
           <Router>
       <nav style={{ margin: 10 }}>
         {/* <Navbar2 /> */}
+        <Navigation></Navigation>
       </nav>
 
       <Routes>
