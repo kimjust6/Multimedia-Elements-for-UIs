@@ -7,12 +7,12 @@ const AssignmentsNav = () => {
     <div style={{ paddingTop: 80, paddingLeft:20 }}>
       <div className= "mt-3">
 
-      <nav >
-        <Link to="/~bth645_221a18/assignments/1">Assignment 1</Link>
-        <Link to="/~bth645_221a18/assignments/2">Assignment 2</Link>
-        <Link to="/~bth645_221a18/assignments/3">Assignment 3</Link>
+      {/* <nav >
+        <Link to="/assignments/1">Assignment 1</Link>
+        <Link to="/assignments/2">Assignment 2</Link>
+        <Link to="/assignments/3">Assignment 3</Link>
 
-      </nav>
+      </nav> */}
       <Outlet />
     </div>
     </div>

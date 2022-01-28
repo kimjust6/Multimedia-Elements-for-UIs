@@ -1,6 +1,6 @@
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 
-import './App.css';
+import "./App.css";
 
 import About from "./components/AboutMe";
 import Policy from "./components/Policy";
@@ -22,44 +22,42 @@ import Navigation from "./components/Navbar";
 function App() {
   return (
     <div>
-          <Router>
-      <nav style={{ margin: 10 }}>
-        {/* <Navbar2 /> */}
-        <Navigation></Navigation>
-      </nav>
+      <Router>
+        <nav style={{ margin: 10 }}>
+          {/* <Navbar2 /> */}
+          <Navigation></Navigation>
+        </nav>
 
-      <Routes>
-        <Route path="/" element={<About />} />
-        <Route path="~bth645_221a18/" >
+        <Routes>
+          <Route path="/" element={<About />} />
+          <Route path="/~bth645_221a18/" element={<About />} />
+          <Route path="~bth645_221a18/">
+            <Route path="about" element={<About />} />
+            <Route path="assignments" element={<AssignmentsNav />}>
+              <Route path="" element={<Assignments />} />
+              <Route path="1" element={<Assignment1 />} />
+              <Route path="2" element={<Assignment2 />} />
+              <Route path="3" element={<Assignment3 />} />
+            </Route>
 
-        <Route path="about" element={<About />} />
-        <Route path="assignments" element={<AssignmentsNav />}>
-          <Route path="" element={<Assignments />} />
-          <Route path="1" element={<Assignment1 />} />
-          <Route path="2" element={<Assignment2 />} />
-          <Route path="3" element={<Assignment3 />} />
-        </Route>
+            <Route path="labs" element={<LabsNav />}>
+              <Route path="" element={<Labs />} />
+              <Route path="1" element={<Lab1 />} />
+              <Route path="2" element={<Lab2 />} />
+              <Route path="3" element={<Lab3 />} />
+              <Route path="4" element={<Lab4 />} />
+              <Route path="5" element={<Lab5 />} />
+            </Route>
 
-        <Route path="labs" element={<LabsNav />}>
-          <Route path="" element={<Labs />} />
-          <Route path="1" element={<Lab1 />} />
-          <Route path="2" element={<Lab2 />} />
-          <Route path="3" element={<Lab3 />} />
-          <Route path="4" element={<Lab4 />} />
-          <Route path="5" element={<Lab5 />} />
-        </Route>
+            <Route path="policy" element={<Policy />} />
+          </Route>
+          <Route path="404" element={<PageNotFound />} />
+          <Route path="*" element={<PageNotFound />} />
 
-        <Route path="policy" element={<Policy />} />
-
-        </Route>
-        <Route path="404" element={<PageNotFound />} />
-        <Route path="*" element={<PageNotFound />} />
-
-        {/* <Navigate from="/100" to="/404" />  */}
-      </Routes>
-    </Router>
+          {/* <Navigate from="/100" to="/404" />  */}
+        </Routes>
+      </Router>
     </div>
-
   );
 }
 

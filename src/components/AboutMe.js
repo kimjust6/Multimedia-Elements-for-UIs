@@ -4,8 +4,8 @@ import React from 'react';
 const aboutMe = () => {
   return (
     <div style={{ paddingTop: 80, paddingLeft:20 }}>
-     <div className="prose">
-    <div className="font-bold m-2">About Me</div>
+     
+    <h1>About Me</h1>
     <div>
     <p>My name is Justin Kim, and I am a third year computer science student at Seneca College. </p>
     <p>I am currently searching for a co-op position for Summer of 2022.</p>
@@ -16,7 +16,7 @@ const aboutMe = () => {
     </div>
     
     </div> 
-  </div>
+  
     );
 };
 
