@@ -19,6 +19,7 @@ import PageNotFound from "./components/PageNotFound";
 import LabsNav from "./components/Labs/LabsNav";
 import Navigation from "./components/Navbar";
 
+
 function App() {
   return (
     <div>
@@ -57,6 +58,7 @@ function App() {
           {/* <Navigate from="/100" to="/404" />  */}
         </Routes>
       </Router>
+
     </div>
   );
 }

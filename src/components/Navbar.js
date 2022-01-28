@@ -7,7 +7,7 @@ function Navigation() {
     <div>
       <Navbar  fixed="top" bg="dark" variant="dark" expand="lg">
         <Container >
-          <Navbar.Brand as={Link} to="/about">Justin Kim</Navbar.Brand>
+          <Navbar.Brand as={Link} to="/~bth645_221a18/about">Justin Kim</Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
