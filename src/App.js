@@ -4,20 +4,21 @@ import "./App.css";
 
 import About from "./components/AboutMe";
 import Policy from "./components/Policy";
-import AssignmentsNav from "./components/Assignments/AssignmentsNav";
-import Assignments from "./components/Assignments/Assignments";
-import Assignment1 from "./components/Assignments/Assignment1";
-import Assignment2 from "./components/Assignments/Assignment2";
-import Assignment3 from "./components/Assignments/Assignment3";
-import Labs from "./components/Labs/Labs";
-import Lab1 from "./components/Labs/Lab1";
-import Lab2 from "./components/Labs/Lab2";
-import Lab3 from "./components/Labs/Lab3";
-import Lab4 from "./components/Labs/Lab4";
-import Lab5 from "./components/Labs/Lab5";
+import AssignmentsNav from "./components/assignments/AssignmentsNav";
+import Assignments from "./components/assignments/Assignments";
+import Assignment1 from "./components/assignments/Assignment1";
+import Assignment2 from "./components/assignments/Assignment2";
+import Assignment3 from "./components/assignments/Assignment3";
+import Labs from "./components/labs/Labs";
+import Lab1 from "./components/labs/Lab1";
+import Lab2 from "./components/labs/Lab2";
+import Lab3 from "./components/labs/Lab3";
+import Lab4 from "./components/labs/Lab4";
+import Lab5 from "./components/labs/Lab5";
 import PageNotFound from "./components/PageNotFound";
-import LabsNav from "./components/Labs/LabsNav";
+import LabsNav from "./components/labs/LabsNav";
 import Navigation from "./components/Navbar";
+import Design from "./components/design/Design";
 
 
 function App() {
@@ -34,6 +35,7 @@ function App() {
           <Route path="/~bth645_221a18/" element={<About />} />
           <Route path="~bth645_221a18/">
             <Route path="about" element={<About />} />
+            <Route path="design" element={<Design />} />
             <Route path="assignments" element={<AssignmentsNav />}>
               <Route path="" element={<Assignments />} />
               <Route path="1" element={<Assignment1 />} />

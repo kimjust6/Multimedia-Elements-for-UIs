@@ -1,6 +1,7 @@
 import { Navbar, Container, Nav, NavDropdown } from "react-bootstrap";
 import {Link} from "react-router-dom";
 import React from "react";
+import "./navbar.css";
 
 function Navigation() {
   return (
@@ -15,6 +16,8 @@ function Navigation() {
             </Nav>
             <Nav>
               <Nav.Link as={Link} to="/~bth645_221a18/about">About Me</Nav.Link>
+              <Nav.Link as={Link} to="/~bth645_221a18/design">Design</Nav.Link>
+              
               <NavDropdown title="Assignments" id="basic-nav-dropdown">
               <NavDropdown.Item as={Link} to="/~bth645_221a18/assignments/1">
                   Assignment 1

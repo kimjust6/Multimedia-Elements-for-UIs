@@ -3,7 +3,7 @@ import React from 'react';
 
 const aboutMe = () => {
   return (
-    <div style={{ paddingTop: 80, paddingLeft:20 }}>
+    <div  style={{ paddingTop: 80, paddingLeft:20 }}>
      
     <h1>About Me</h1>
     <div>
