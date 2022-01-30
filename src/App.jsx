@@ -1,6 +1,6 @@
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 
-import "./App.css";
+import "./App.scss";
 
 import About from "./components/AboutMe";
 import Policy from "./components/Policy";
