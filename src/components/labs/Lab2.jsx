@@ -4,7 +4,7 @@ import LabsNav from './LabsNav';
 
 const Lab2 = () => {
   return (
-    <div>
+    <div className="container">
     <h1>Lab 2</h1>
     <p>Lab 2 TODO.</p>
     

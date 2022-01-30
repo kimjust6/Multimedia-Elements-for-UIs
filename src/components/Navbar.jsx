@@ -5,8 +5,8 @@ import "./navbar.scss";
 
 function Navigation() {
   return (
-    <div>
-      <Navbar  fixed="top" bg="dark" variant="dark" expand="lg">
+    <div className = "container">
+      <Navbar  fixed="top" bg="dark" variant="dark" expand="lg" className="navigation">
         <Container >
           <Navbar.Brand as={Link} to="/~bth645_221a18/about">Justin Kim</Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -15,7 +15,7 @@ function Navigation() {
 
             </Nav>
             <Nav>
-              <Nav.Link as={Link} to="/~bth645_221a18/about">About Me</Nav.Link>
+              <Nav.Link as={Link} to="/~bth645_221a18/about" >About Me</Nav.Link>
               <Nav.Link as={Link} to="/~bth645_221a18/design">Design</Nav.Link>
               
               <NavDropdown title="Assignments" id="basic-nav-dropdown">

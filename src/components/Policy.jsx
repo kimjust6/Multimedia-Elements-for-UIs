@@ -2,7 +2,7 @@ import React from "react";
 
 const aboutMe = () => {
   return (
-    <div style={{ paddingTop: 80, paddingLeft: 20 }}>
+    <div style={{ paddingTop: 80, paddingLeft: 20 }} className="container">
       <h1>Academic Policy</h1>
       <p>
         I declare that this is wholly my own work in accordance with <br />
@@ -10,9 +10,9 @@ const aboutMe = () => {
         copied manually or electronically from any other source <br />
         (including web sites) or distributed to other students.
       </p>
-      <br></br>
+      
       <p>
-        Justin Kim 146377163
+        Justin Kim <br/> 146377163
       </p>
     </div>
   );

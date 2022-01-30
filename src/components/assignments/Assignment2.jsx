@@ -5,7 +5,7 @@ import AssignmentsNav from './AssignmentsNav';
 
 const Assignment2 = () => {
   return (
-    <div>
+    <div className="container">
 
     <h1>Assignment 2</h1>
     <p>Assignment 2 TODO.</p>

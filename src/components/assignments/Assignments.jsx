@@ -6,7 +6,7 @@ import AssignmentsNav from './AssignmentsNav';
 
 const Assignments = () => {
   return (
-    <div >
+    <div className="container" >
 
 
     <h1>Assignments</h1>
