@@ -1,6 +1,6 @@
 
 import React from 'react';
-import LabsNav from './LabsNav';
+
 
 const Lab1 = () => {
   return (
