@@ -7,10 +7,10 @@ const Lab2 = () => {
       <div className="all">
         <div>
           <h1>Lab 2</h1>
-          <h2>Reflection</h2>
         </div>
         <div className="content">
           <div className="text">
+            <h2>Reflection</h2>
             <p>
               1) I made changed the image to greyscale. I did this because I
               believe that you can make an image look a lot more interesting by
@@ -53,9 +53,9 @@ const Lab2 = () => {
                 alt="Black and White Dog"
               ></img>
             </div>
-            
+
             <div className="images">
-            <h2>Drawn</h2>
+              <h2>Drawn</h2>
               <img
                 src="https://i.imgur.com/e1ng27K.png"
                 alt="Paint Thonk"
