@@ -1,53 +1,52 @@
 import React from "react";
-import { Howl, Howler } from "howler";
+// import { Button } from "react-bootstrap";
+// import { Howl, Howler } from "howler";
+
+// import sound1 from "./resource/2022-02-12-20-21-19.mp3";
+// import sound2 from "./resource/2022-02-12-20-21-19-processed.mp3";
 import "./lab3.scss";
 
-import sound1 from "./resource/2022-02-12-20-21-19.mp3";
-import sound2 from "./resource/2022-02-12-20-21-19-processed.mp3";
+// const audioClips = [
+//   // {sound: `../resources/Abandoned & GalaxyTones - Luna (Feat. DNAKM) [NCS Release].mp3`, label: "Play"},
 
-import { Button } from "react-bootstrap";
-
-const audioClips = [
-  // {sound: `../resources/Abandoned & GalaxyTones - Luna (Feat. DNAKM) [NCS Release].mp3`, label: "Play"},
-
-  { sound: sound1, label: "Original" },
-  { sound: sound2, label: "Edited" },
-];
+//   { sound: sound1, label: "Original" },
+//   { sound: sound2, label: "Edited" },
+// ];
 
 const Lab3 = () => {
-  let soundPlay = function (src) {
-    const sound = new Howl({
-      src,
-      //allows us to use external links
-      html5: true,
-    });
-    sound.play();
-  };
-  let RenderButtonSound = () => {
-    return audioClips.map((soundObj, index) => {
-      return (
-        <div className="sounds">
-          <Button
-            variant="dark"
-            key={index}
-            onClick={() => soundPlay(soundObj.sound)}
-          >
-            {soundObj.label}
-          </Button>
-        </div>
-      );
-    });
-  };
+  // let soundPlay = function (src) {
+  //   const sound = new Howl({
+  //     src,
+  //     //allows us to use external links
+  //     html5: true,
+  //   });
+  //   sound.play();
+  // };
+  // let RenderButtonSound = () => {
+  //   return audioClips.map((soundObj, index) => {
+  //     return (
+  //       <div className="sounds">
+  //         <Button
+  //           variant="dark"
+  //           key={index}
+  //           onClick={() => soundPlay(soundObj.sound)}
+  //         >
+  //           {soundObj.label}
+  //         </Button>
+  //       </div>
+  //     );
+  //   });
+  // };
 
   return (
     <div className="container">
       <div className="all">
         <div>
           <h1>Lab 3</h1>
-          <h2>Reflection</h2>
         </div>
         <div className="content">
           <div className="text">
+            <h2>Reflection</h2>
             <p>
               1) I chose to use the .mp3 extension because of its compatibility
               and flexibility. MP3 is a compressed and lossy file format, but it
@@ -57,7 +56,18 @@ const Lab3 = () => {
               audio quality as I am not playing music or complex sounds. At the
               same time, I do still want the audio to be clear.
             </p>
-            <p>2) </p>
+            <p>
+              2) I decided that I wanted to prioritize ease of use and
+              functionality over everything else. I found that the easiest way
+              to have UI for volume and play/pause buttons was to embed from
+              google and embed the audio. Originally, I tried storing the audio
+              locally and using howler to play the audio. I found that it would
+              be difficult to implement any additional functionality other than
+              just a play button that would play the audio when clicked. This
+              mean that it would not have pause, scrubbing or audio controls.
+              And in favour of having those controls, I decided to embed the
+              audio.
+            </p>
             <p>
               3) There are various types of audio files and each have their own
               strengths and weaknesses. Below is a list of a few different file
@@ -86,11 +96,31 @@ const Lab3 = () => {
               voice.
             </p>
           </div>
-        </div>
-        <div>
-          <div className="audio">
-            <h2>Audio</h2>
-            {RenderButtonSound()};
+
+          <div>
+            <div className="audio">
+              <h2>Audio</h2>
+              <div>
+                <h4>Original Recording</h4>
+                <iframe
+                  title="audio1"
+                  src="https://drive.google.com/file/d/1zkdbbBgUDzcoU4_OSlVyzUvtNyF-SATz/preview"
+                  width="440"
+                  height="80"
+                  allow="autoplay"
+                ></iframe>
+              </div>
+              <div>
+                <h4>Edited Recording</h4>
+                <iframe
+                  title="audio2"
+                  src="https://drive.google.com/file/d/1Hgobfl6WFtQWoRKDZ2xtNlG3TNDjd4QM/preview"
+                  width="440"
+                  height="80"
+                  allow="autoplay"
+                ></iframe>
+              </div>
+            </div>
           </div>
         </div>
       </div>
