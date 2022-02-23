@@ -1,2 +1,2 @@
-# Justin's Website for Multimedia Course
+# Justin's Website for BTH645 Multimedia Elements for UIs
 * Coded in react js
