@@ -25,8 +25,9 @@ const Lab4 = () => {
         <div className="content">
           <div className="video">
             <iframe
-
-              src="https://www.youtube.com/embed/wh3H0rIQW5M"
+              width="1904"
+              height="772"
+              src="https://www.youtube.com/embed/LTi0vEiIayM"
               title="YouTube video player"
               frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
