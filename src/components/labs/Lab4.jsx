@@ -1,5 +1,4 @@
 import React from "react";
-import LabsNav from "./LabsNav";
 import "./lab4.scss";
 
 const Lab4 = () => {
