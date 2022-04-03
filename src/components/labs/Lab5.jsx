@@ -1,12 +1,12 @@
 
 import React from 'react';
-import LabsNav from './LabsNav';
+import Lab5P5 from './Lab5P5';
 
 const Lab5 = () => {
   return (
     <div className="container">
     <h1>Lab 5</h1>
-    <p>Lab 5 TODO.</p>
+  <Lab5P5/>
     
   </div>
     );
