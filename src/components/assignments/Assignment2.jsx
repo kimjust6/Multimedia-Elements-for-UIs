@@ -13,12 +13,17 @@ const Assignment2 = () => {
         <div className="text">
           <h2>Music</h2>
           <p>
-          YouTube. (2018). Intro : Serendipity 여자 Cover by Line.B. YouTube. Retrieved April 10, 2022, from <a href="https://www.youtube.com/watch?v=fTSgLiGLYJI" target="_blank">https://www.youtube.com/watch?v=fTSgLiGLYJI. </a>
+            YouTube. (2018). Intro : Serendipity 여자 Cover by Line.B. YouTube. Retrieved April 10, 2022, from <a href="https://www.youtube.com/watch?v=fTSgLiGLYJI" target="_blank">https://www.youtube.com/watch?v=fTSgLiGLYJI. </a>
           </p>
           <h2>Equipment</h2>
           <p>
             <li>Smartphone</li>
             <li> Laptop </li>
+          </p>
+          <h2>Notes</h2>
+          <p>
+            I created this video with the intent to review the laptop that I have been using for the last year.
+            I showcase the specifications and do a soundtest of the keyboard.  Typically people care about performance, battery life, and the keyboard, so that was the areas that I decided to focus my time on.
           </p>
         </div>
         <div className="content">
