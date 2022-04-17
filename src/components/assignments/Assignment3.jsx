@@ -1,6 +1,6 @@
 
 import React from 'react';
-import AssignmentsNav from './AssignmentsNav';
+import A3P5 from './Assignment3P5';
 
 
 const Assignment3 = () => {
@@ -8,8 +8,7 @@ const Assignment3 = () => {
     <div className="container">
 
     <h1>Assignment 3</h1>
-    <p>Assignment 3 TODO.</p>
-    
+    <A3P5/>
     
   </div>
     );
