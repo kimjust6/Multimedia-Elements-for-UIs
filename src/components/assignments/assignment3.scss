@@ -1,4 +1,6 @@
-.container .p5{
-    display:flex;
-
+.all{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
+

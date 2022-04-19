@@ -14,7 +14,6 @@ let canvasX = 1200;
 let canvasY = 500;
 let foodX = 0;
 let foodY = 0;
-var image = null;
 var image2 = null;
 const frameRate = 120;
 const blockSize = 25;
@@ -169,7 +168,6 @@ const A3P5 = (props) => {
   return (
     <div>
       <Sketch setup={setup} draw={draw} keyPressed={keyPressed} />
-      <br></br>
       <Button onClick={reset}>Retry</Button>
     </div>
   );
