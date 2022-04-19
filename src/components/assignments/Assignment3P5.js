@@ -1,5 +1,6 @@
 import React from "react";
 import Sketch from "react-p5";
+import {Button} from "react-bootstrap";
 import "./assignment3.scss";
 
 // start position
@@ -105,7 +106,7 @@ const A3P5 = (props) => {
         p5.background(51);
         p5.textSize(30);
         p5.fill(255, 255, 255);
-        
+
         p5.text("Score: " + (snakeLength - 3), 10, 25);
         //draw the food
         p5.image(
@@ -152,7 +153,26 @@ const A3P5 = (props) => {
     return Math.floor(Math.random() * (max - min + 1)) + min;
   }
 
-  return <Sketch setup={setup} draw={draw} keyPressed={keyPressed} />;
+  function reset()
+  {
+    snakeLength = 3;
+    snakeX[0] = 0;
+    snakeY[0] = 0;
+    gameOver = false;
+    xDisplacement = blockSize;
+    yDisplacement = 0;
+    
+    foodX = getRandomInt(0, canvasX / blockSize - 1);
+    foodY = getRandomInt(0, canvasY / blockSize - 1);
+  }
+
+  return (
+    <div>
+      <Sketch setup={setup} draw={draw} keyPressed={keyPressed} />
+      <br></br>
+      <Button onClick={reset}>Retry</Button>
+    </div>
+  );
 };
 
 export default A3P5;

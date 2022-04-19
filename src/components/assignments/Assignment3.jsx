@@ -12,8 +12,7 @@ const Assignment3 = () => {
       {/* <button className="btn btn-primary" onClick={getRandomInt}>Button</button> */}
       <h1>Assignment 3</h1>
       <A3P5 />
-      <br />
-      <Button className="primary" onClick={reloadPage}>Try Again</Button>
+      {/* <Button className="primary" onClick={reloadPage}>Try Again</Button> */}
       <br />
       <br />
       <h1>Reflection</h1>
