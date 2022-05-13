@@ -1,2 +1,2 @@
 # Justin's Website for BTH645 Multimedia Elements for UIs
-* Coded in react js
+Coded this application for class.  It is intended display various types of multimedia.
